@@ -1,0 +1,38 @@
+/*
+#quemSomos {
+  background-image: url('/patterns/Waiau-2.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: top right;
+}
+*/
+
+.team-decoration {
+  position: absolute;
+  top: -32px;
+}
+
+.team-decoration line {
+  stroke: $primary;
+  stroke-width: 2;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border-right: 4px solid $primary;
+}
+
+@media (min-width: 600px) {
+  .card-image {
+    flex: 1;
+  }
+
+  .card-content {
+    flex-basis: 80%;
+  }
+}
+
+.team > .card:nth-child(3) {
+  margin: 2rem 0;
+}

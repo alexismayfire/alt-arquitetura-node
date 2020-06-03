@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+#home {
+  background-image: url("/images/bg-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+$radius: 0px;
+$primary: #323232;
+
+@import "../../node_modules/bulma/bulma.sass";
+@import "./base.scss";
+@import "./navbar.scss";
+@import "./section.scss";
+@import "./blog.scss";
+

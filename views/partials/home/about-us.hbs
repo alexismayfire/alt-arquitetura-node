@@ -1,0 +1,27 @@
+<div class="columns is-variable is-6">
+  <div class="column is-half">
+    {{> home/section-title ctx=aboutUs }}
+    <div class="hero-content">
+      {{#each aboutUs.content}}
+      <p class="is-size-5">{{this}}</p>
+      {{/each}}
+    </div>
+  </div>
+  <div class="column is-half">
+    <div class="team">
+      <svg class="team-decoration" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <!--
+        <line x1="80" y1="5" x2="80" y2="80" />
+        <line x1="240" y1="5" x2="240" y2="80" />
+        <line x1="79" y1="5" x2="241" y2="5" />
+        <line x1="120" y1="100" x2="120" y2="280" />
+        -->
+      </svg>
+
+      {{#each aboutUs.members}}
+      {{> team/card }}
+      {{/each}}
+
+    </div>
+  </div>
+</div>

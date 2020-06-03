@@ -1,0 +1,20 @@
+<div class="columns">
+  <div class="column is-3 project-container">
+    {{> home/section-title ctx=projects }}
+    <ul class="project-list is-size-4">
+      {{#each projects.items}}
+      <li class="project-item {{#if active}}active{{/if}}">{{name}}</li>
+      {{/each}}
+      <li><a href="/projetos" class="button is-primary">Ver Todos</a></li>
+    </ul>
+  </div>
+  <div class="column is-9">
+    <figure class="image is-16by9">
+      {{#each projects.items}}
+      {{#if active}}
+      <img class="project-image" src="{{image}}" />
+      {{/if}}
+      {{/each}}
+    </figure>
+  </div>
+</div>

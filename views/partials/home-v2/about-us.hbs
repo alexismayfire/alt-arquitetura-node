@@ -1,0 +1,17 @@
+<div class="columns is-variable is-6">
+  <div class="column is-half">
+    {{> home-v2/section-title ctx=aboutUs }}
+    <div class="hero-content">
+      {{#each aboutUs.content}}
+      <p class="is-size-5">{{this}}</p>
+      {{/each}}
+    </div>
+  </div>
+  <div class="column is-half">
+    <div class="team">
+      {{#each aboutUs.members}}
+      {{> team/card }}
+      {{/each}}
+    </div>
+  </div>
+</div>

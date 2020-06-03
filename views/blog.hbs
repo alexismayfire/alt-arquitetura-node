@@ -1,0 +1,44 @@
+{{> navbar }}
+<section class="blog">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8">
+        <h2 class="title is-2 archive-title">
+          Blog{{#if archiveTitle}} | <span class="is-size-4">{{archiveTitle}}</span>{{/if}}
+        </h2>
+        <div class="post is-relative">
+          <figure class="image is-16by9">
+            <img class="project-image" src="https://via.placeholder.com/1600x900" />
+          </figure>
+          <div class="content">
+            <div class="meta">
+              <h3 class="title is-3">Post</h3>
+              <div class="is-size-6">
+                <span class="has-text-weight-light">20/05/2020 | </span>
+                <a href="/blog-category.html" class="has-text-weight-semibold">
+                  Projetos
+                </a>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              at faucibus mauris. Nulla non varius dolor. Phasellus
+              efficitur et eros ut molestie. Duis convallis metus sed leo
+              elementum, sed euismod est vestibulum. Vestibulum sagittis est
+              eu sem facilisis malesuada. Nulla a ultrices odio. Cras sed
+              est et nisl.
+            </p>
+            <div class="action">
+              <a href="/single-post.html" class="button is-dark">
+                Ler Mais
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        {{> blog/sidebar }}
+      </div>
+    </div>
+  </div>
+</section>

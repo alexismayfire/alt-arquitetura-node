@@ -1,0 +1,24 @@
+{
+  "name": "node-http-server",
+  "version": "1.0.0",
+  "description": "Node.js example server starter project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run css-watch\"",
+    "server": "nodemon src/index.js",
+    "css-build": "node-sass --omit-source-map-url src/sass/main.scss src/assets/css/custom-bulma.css",
+    "css-watch": "npm run css-build -- --watch"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "bulma": "0.8.2",
+    "concurrently": "5.2.0",
+    "express": "4.17.1",
+    "express-handlebars": "4.0.4",
+    "node-sass": "4.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}

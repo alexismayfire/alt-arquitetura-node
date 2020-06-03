@@ -1,0 +1,8 @@
+{{> home-v2/section-title ctx=services }}
+<div class="columns is-multiline">
+  {{#each services.content}}
+  <div class="column is-12 card-service">
+    {{> services/card-v2 }}
+  </div>
+  {{/each}}
+</div>

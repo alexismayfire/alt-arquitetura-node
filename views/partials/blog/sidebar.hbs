@@ -1,0 +1,21 @@
+<aside class="sidebar">
+  <form class="sidebar-item" id="form-busca" action="" method="post">
+    <label class="label">Pesquise em nosso blog</label>
+    <div class="field has-addons">
+      <div class="control">
+        <input name="busca" type="text" class="input" />
+      </div>
+      <div class="control">
+        <input type="submit" class="button is-dark" />
+      </div>
+    </div>
+  </form>
+  <div class="sidebar-item panel is-primary">
+    <p class="panel-heading has-background-grey-dark is-uppercase">
+      Categorias
+    </p>
+    {{#each categories}}
+    <a href="/blog/{{slug}}" class="panel-block {{activeClasses}}">{{title}}</a>
+    {{/each}}
+  </div>
+</aside>

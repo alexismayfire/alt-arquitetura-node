@@ -1,0 +1,8 @@
+{{> home/section-title ctx=services }}
+<div class="columns is-multiline is-variable is-6">
+  {{#each services.content}}
+  <div class="column is-half card-service">
+    {{> services/card }}
+  </div>
+  {{/each}}
+</div>

@@ -1,0 +1,66 @@
+.title:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.title span {
+  display: block;
+  margin: 0;
+}
+
+.title svg {
+  position: absolute;
+  top: -1.5em;
+  left: 2em;
+  opacity: 0.2;
+}
+
+.subtitle:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.title-adornment-left,
+.title-adornment-right {
+  position: relative;
+}
+
+.title-adornment-left {
+  width: fit-content;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #323232;
+}
+
+.title-adornment-left::after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-color: #323232;
+}
+
+.title-adornment-right::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -8px;
+  overflow-x: inherit;
+  height: 2px;
+  width: 200%;
+  background-color: #323232;
+}
+
+.hero.is-fullheight-with-navbar .hero-body.flex-start {
+  align-items: flex-start;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+@import './sections/about-us.scss';
+@import './sections/services.scss';
+@import './sections/project.scss';

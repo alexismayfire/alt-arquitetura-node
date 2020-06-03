@@ -1,0 +1,93 @@
+
+.project-image {
+  width: 100%;
+  height: 100%;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  margin: 0 10%;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 16px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-item {
+  width: fit-content;
+  padding: 8px 0;
+  position: relative;
+}
+
+.project-item.active::before {
+  content: "";
+  border: 2px solid #323232;
+  margin-right: 8px;
+}
+
+.project-item:not(.active)::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: transparent;
+  transition: all 400ms ease-in-out;
+}
+
+.project-item:not(.active):hover::after,
+.project-item:not(.active):focus::after {
+  width: 100%;
+  background-color: #323232;
+}
+
+.project-item:not(.active):hover {
+  cursor: pointer;
+}
+
+/*
+.project-item:not(.active) {
+  --border-width: 2px;
+  --animation-speed: 300ms;
+  --color: #323232;
+  border-bottom: var(--border-width) solid transparent;
+  animation: borderColorsOut var(--animation-speed) ease-in forwards;
+}
+
+.project-item:not(.active):hover {
+  cursor: pointer;
+  animation: borderColors var(--animation-speed) ease-out forwards;
+}
+
+@keyframes borderColors {
+  from {
+    border-bottom: var(--border-width) solid transparent;
+  }
+  to {
+    border-bottom: var(--border-width) solid var(--color);
+  }
+}
+
+@keyframes borderColorsOut {
+  from {
+    border-bottom: var(--border-width) solid var(--color);
+  }
+  to {
+    border-bottom: var(--border-width) solid transparent;
+  }
+}
+*/
